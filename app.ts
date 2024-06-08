@@ -5,6 +5,8 @@ class Note {
 
 // NoteManager class to manage creation, editing, and organizing of notes
 class NoteManager {
+
+
     private notes: Note[] = [];
 
     // Function to add a new note
@@ -39,30 +41,31 @@ class NoteManager {
     }
 }
 
-// Main function to interact with the user
+
+// This is the main function that will interact with the user
 async function main() {
     const noteManager = new NoteManager();
 
-    console.log("Welcome to the Note Taking App!");
+
+    console.log("Welcome to my very own Note-Taking App! Please do the following:");
 
     while (true) {
-        console.log("\nOptions:");
-        console.log("1. Add a Note");
-        console.log("2. Edit a Note");
-        console.log("3. List All Notes");
-        console.log("4. Exit");
+        console.log("1. To add a note");
+        console.log("2. To edit previously added note");
+        console.log("3. To list all recorded note(s)");
+        console.log("4. To exit program");
 
-        const choice = await promptUser("Enter your choice: "); // Change 'prompt' to 'promptUser'
+        const choice = await promptUser("Please enter your option choice: "); 
 
         switch (choice) {
             case "1":
-                const title = await promptUser("Enter note title: "); // Change 'prompt' to 'promptUser'
-                const content = await promptUser("Enter note content: "); // Change 'prompt' to 'promptUser'
+                const title = await promptUser("Please enter title of note: "); // Change 'prompt' to 'promptUser'
+                const content = await promptUser("Please enter note of content: "); // Change 'prompt' to 'promptUser'
                 noteManager.addNote(title, content);
                 break;
             case "2":
-                const noteTitle = await promptUser("Enter title of the note to edit: "); // Change 'prompt' to 'promptUser'
-                const newContent = await promptUser("Enter new content: "); // Change 'prompt' to 'promptUser'
+                const noteTitle = await promptUser("Please enter title of note to edit: "); // Change 'prompt' to 'promptUser'
+                const newContent = await promptUser("Please enter new content: "); // Change 'prompt' to 'promptUser'
                 try {
                     noteManager.editNote(noteTitle, newContent);
                 } catch (error) {
@@ -73,22 +76,27 @@ async function main() {
                 noteManager.listNotes();
                 break;
             case "4":
-                console.log("Exiting...");
+                console.log("Thank you for participating!");
                 return;
             default:
-                console.log("Invalid choice. Please try again.");
+                console.log("This option is invalid. Please try again.");
         }
     }
 }
 
+
 // Function to prompt user for input
 function promptUser(question: string): Promise<string> {
+
+
     const readline = require("readline").createInterface({
         input: process.stdin,
         output: process.stdout
     });
 
     return new Promise((resolve) => {
+
+
         readline.question(question, (answer: string) => {
             resolve(answer);
             readline.close();
@@ -96,5 +104,5 @@ function promptUser(question: string): Promise<string> {
     });
 }
 
-// Start the main function
+
 main().catch(console.error);

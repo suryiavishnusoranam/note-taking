@@ -1,32 +1,26 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+With my Note-Taking App, users can create, edit, and organize notes through the terminal interface using the note-taking application. The purpose behind developing this software was to enhance my skills in TypeScript and gain more insights into object-oriented programming concepts.
 
-{Provide a description of the software that you wrote to demonstrate the TypeScript language.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
+I intend to extend my knowledge by proving my TypeScript proficiency. I built a note-taking application with TypeScript for this reason. I was able to demonstrate my understanding of different aspects of TypeScript syntax including classes, asynchronous functions, error handling and terminal interaction. 
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+For the development of this software, I utilized the following tools: Visual Studio Code: A versatile code editor with excellent TypeScript support, Node.js: A JavaScript runtime environment for executing JavaScript code outside of a browser, TypeScript: A superset of JavaScript that adds static typing and other features to the language.
 
-{Describe the programming language that you used and any libraries.}
+I leveraged TypeScript as the primary programming language for this project. Additionally, I made use of Node.js's readline module to interact with the user via the terminal.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Typescript] https://www.typescriptlang.org/docs/
+- [Node.js]https://nodejs.org/en
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+- Introducing more functionalities like tagging, searching and sorting notes.
 
-- Item 1
-- Item 2
-- Item 3
+- Improving the user interface for better user friendliness.
+
+- Optimizing the performance and scaling capability of the application.
