@@ -4,7 +4,7 @@ With my Note-Taking App, users can create, edit, and organize notes through the 
 
 I intend to extend my knowledge by proving my TypeScript proficiency. I built a note-taking application with TypeScript for this reason. I was able to demonstrate my understanding of different aspects of TypeScript syntax including classes, asynchronous functions, error handling and terminal interaction. 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/XttnfVepIhs)
 
 # Development Environment
 
